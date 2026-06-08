@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var listaObrasArte = ObraDeArte.listaObras
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            VistaGaleria(listaObras: $listaObrasArte)
+                .tabItem {
+                    Label("Galería", systemImage: "photo")
+                }
+
+            GraficaGaleria()
+                .tabItem {
+                    Label("Gráficas", systemImage: "chart.bar")
+                }
         }
-        .padding()
     }
 }
 
