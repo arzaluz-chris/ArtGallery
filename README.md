@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="Screenshots/AppIcon.png" width="120" style="border-radius: 24px; margin-bottom: 20px;" alt="ArtGallery App Icon"/>
   <h1>🎨 ArtGallery</h1>
   <p><em>Aplicación iOS desarrollada para el reto final del programa iOS Developer del Tecnológico de Monterrey.</em></p>
 </div>
